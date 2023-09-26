@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main{
+
+    public static void main(String args[]){
+        Scanner lector = new Scanner(System.in);
+
+        System.out.println("Vamos a pedir al usuario el tamaño de la matriz ");
+        // como consejo se declara los valores y ahi mismo se piden para evitar lineas de mas
+        int cantidadDeEstudiantes = lector.nextInt();
+
+        String nombre[] = new String [cantidadDeEstudiantes];
+        double notas[] = new double [cantidadDeEstudiantes];
+
+        for(int i = 0; i< cantidadDeEstudiantes; i++){
+            
+            System.out.println("Cual es el nombre de los estudiantes" +( i +1));
+            lector.nextLine();
+            nombre[i] = lector.nextLine();
+
+            System.out.println("Cual es la nota del estudiante" + ( i + 1));
+            notas[i] = lector.nextDouble();
+        }
+
+        for(int i = 0 ; i<cantidadDeEstudiantes ; i++){
+            System.out.println("el nombre del estudiantes es" + nombre[i] + "La nota del estudiantes es " + notas[i])
+        }
+    }
+}
