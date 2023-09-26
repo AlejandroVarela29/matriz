@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class Varela1{
+
+    public static void main(String args[]){
+
+        Scanner varela = new Scanner(System.in);
+        System.out.println("Cual es el valor de las columnas");
+        int columnas = varela.nextInt();
+
+        System.out.println("Cual es el valor de las filas");
+        int filas = varela.nextInt();
+
+        int matriz [][] = new int [filas][columnas];
+
+        for(int i = 0 ; i < filas; i++){
+             for(int j = 0 ; j < columnas; j++){
+
+                System.out.println("Cual es el valor de la fila " +( i +1) + (j +1));
+                  matriz [i][j] = varela.nextInt();
+
+               
+            
+        }
+        System.out.println("");
+
+        }
+
+        for(int i = 0 ; i < filas; i++){
+             for(int j = 0 ; j < columnas; j++){
+
+                System.out.print( matriz[i][j] + " ");
+                
+
+
+
+    }
+    System.out.println();
+}
+}
+}
